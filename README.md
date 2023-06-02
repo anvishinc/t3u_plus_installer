@@ -6,6 +6,5 @@ However has only been tested on Ubuntu upto LTS 22.04.
 
 ## Installation
 ``
-sudo chmod +x t3u_plus_install.sh
-sudo bash ./t3u_plus_install.sh
+sudo chmod +x t3u_plus_install.sh && sudo bash ./t3u_plus_install.sh
 ``
