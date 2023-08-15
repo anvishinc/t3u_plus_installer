@@ -10,6 +10,8 @@ echo "Starting installation of drivers for Tplink T3U-Plus adapter"
 echo "----------------------------------------------by anvish-----"
 echo "============================================================"
 
+read -n 1 -s -r -p "Please unplug your TPlink device (press any key to continue)"
+
 # Install DKMS
 echo "*** Installing DKMS ***"
 echo $password | sudo -S apt-get -y install dkms
@@ -24,6 +26,9 @@ echo "------------------------------------------------------------"
 echo "Disclaimer: This step will take a long while to complete"
 echo "based on your device's performance. However please do not"
 echo "shutdown or restart the device until the whole process is"
-echo "completed and you are told to do so."
+echo "completed or when you are told to do so."
 echo "------------------------------------------------------------"
 echo $password | sudo -S dkms autoinstall
+echo "============================================================"
+echo "Installation is complete. You should now restart your device
+echo "============================================================"
