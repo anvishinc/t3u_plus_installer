@@ -30,5 +30,5 @@ echo "completed or when you are told to do so."
 echo "------------------------------------------------------------"
 echo $password | sudo -S dkms autoinstall
 echo "============================================================"
-echo "Installation is complete. You should now restart your device
+echo "Installation is complete. You should now restart your device"
 echo "============================================================"
